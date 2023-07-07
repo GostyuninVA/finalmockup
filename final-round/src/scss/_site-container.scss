@@ -1,0 +1,14 @@
+.site-container {
+  margin: 0 auto;
+  width: 320px;
+  @include tablets {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1440px;
+    display: grid;
+    grid-template-areas:
+      "A B"
+      "A C";
+  }
+}

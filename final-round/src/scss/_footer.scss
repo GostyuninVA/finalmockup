@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 47px;
+  border-top: 1px solid $border-color;
+  background-color: $background;
+  color: $menu-text-color;
+  font-family: "TT Lakes Medium";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+  @include desktop {
+    grid-area: C;
+    margin-top: 52px;
+  }
+  &__item {
+    margin-left: 52px;
+    margin-top: 16px;
+    opacity: 0.72;
+    width: 218px;
+    &:last-child {
+      width: 312px;
+      margin-left: 0;
+    }
+  }
+  @include tablets {
+    flex-direction: row;
+    &__item {
+      letter-spacing: -0.2px;
+      padding-top: 16px;
+      margin-left: 8px;
+      &:first-child {
+        text-align: left;
+        width: 240px;
+        margin-left: 24px;
+      }
+      &:last-child {
+        text-align: right;
+        margin-left: 32px;
+        width: 213px;
+      }
+    }
+  }
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    &__item {
+      &:first-child {
+        text-align: left;
+        width: 218px;
+      }
+      &:last-child {
+        text-align: right;
+        width: 320px;
+        margin-right: 36px;
+      }
+    }
+  }
+}

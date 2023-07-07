@@ -1,0 +1,28 @@
+.kinds {
+  &__item {
+    width: 208px;
+    height: 140px;
+    padding-top: 16px;
+    position: relative;
+  }
+  &__swiper {
+    margin-top: 20px;
+  }
+  @include tablets {
+    &__item {
+      width: 224px;
+      height: 160px;
+      &_disabled {
+        @include visually-hidden;
+      }
+    }
+    &__see-more {
+      left: -116px;
+    }
+  }
+  @include desktop {
+    &__item {
+      width: 240px;
+    }
+  }
+}
